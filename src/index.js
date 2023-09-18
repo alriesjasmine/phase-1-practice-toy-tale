@@ -13,3 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+const toyImageUrl = 'http://localhost:3000/toys'
+const imageContainer = document.getElementById('toy-collection')
+
+
+
+fetch(toyImageUrl)
+  .then((response) => response.json())
+  .then((data) =>console.log(data))
